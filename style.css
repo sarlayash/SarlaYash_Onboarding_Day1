@@ -55,8 +55,8 @@ to{opacity:1;transform:none}
 100%{opacity:0;transform:scale(20)}
 }
 .before{background:radial-gradient(ellipse at 50% 100%,#1c1407,#050504 58%,#000)}
-.narrow{max-width:55vw}
-.before h2{margin-bottom:4vh}
+.before .copy{max-width:55vw;padding-bottom:25vh}
+.before h2{margin-bottom:3vh}
 .before h2 span,.walk-line span{color:var(--gold)}
 .before-lines{font:500 clamp(15px,1.55vw,23px)/1.65 var(--serif);color:#c9bfa8}
 .before-lines p{margin:0;opacity:0;animation:reveal .8s ease forwards}
@@ -65,7 +65,7 @@ to{opacity:1;transform:none}
 .before-lines p:nth-child(3){animation-delay:1.5s}
 .before-lines p:nth-child(4){animation-delay:2s}
 .before-lines p:nth-child(5){animation-delay:2.5s}
-.believed{margin-top:5vh;font:italic clamp(24px,3vw,42px) var(--serif);color:var(--pale);opacity:0;animation:reveal 1s 3.2s forwards}
+.believed{margin-top:1vh;font:italic clamp(24px,3vw,42px)/1.12 var(--serif);color:var(--pale);opacity:0;animation:reveal 1s 3.2s forwards}
 .family-scene{position:absolute;right:11vw;bottom:14vh;width:32vw;height:32vh;opacity:.65}
 .person{position:absolute;bottom:0;background:linear-gradient(90deg,#100d08,#342514);border-radius:50% 50% 10% 10%}
 .person:before{content:"";position:absolute;background:#21180e;border-radius:50%;left:25%;top:-40%;width:50%;height:34%}
@@ -76,7 +76,7 @@ to{opacity:1;transform:none}
 .arm{position:absolute;width:36%;height:4px;background:#6c4c1e;top:38%;transform-origin:left;box-shadow:0 0 12px #a67228}
 .arm-left{left:18%;transform:rotate(-25deg)}
 .arm-right{right:16%;transform:rotate(205deg)}
-.gratitude{position:absolute;left:9vw;bottom:10vh;z-index:2;max-width:58vw}
+.gratitude{position:absolute;left:9vw;bottom:7vh;z-index:2;max-width:58vw}
 .gratitude>p{font:500 clamp(13px,1.45vw,21px)/1.35 var(--serif);letter-spacing:.05em;margin:0 0 1.5vh}
 .gratitude small{color:var(--muted);letter-spacing:.12em;font-size:9px}
 .reflection{display:flex;align-items:center;gap:14px;margin-top:3vh;color:#c9b582;font:italic 14px var(--serif)}
@@ -201,9 +201,13 @@ to{opacity:0;transform:scale(1.6)}
 @media(max-width:700px){.screen{padding:9vh 7vw}
 .hud{left:5vw;right:5vw}
 .hud #sound span{display:none}
-.narrow{max-width:75vw}
+.before .copy{max-width:78vw;padding-bottom:28vh}
+.before h2{margin-bottom:2vh}
+.before-lines{font-size:clamp(14px,4.5vw,19px);line-height:1.45}
+.believed{font-size:clamp(22px,7vw,32px);margin-top:1.5vh}
 .family-scene{opacity:.3;right:4vw;width:50vw}
-.gratitude{max-width:90vw}
+.gratitude{left:7vw;right:7vw;bottom:8vh;max-width:none}
+.gratitude>p{font-size:clamp(12px,3.8vw,17px)}
 .words{max-width:80vw}
 .group{opacity:.22;right:2vw;width:55vw}
 .pathway{gap:3px;margin-top:12vh}
