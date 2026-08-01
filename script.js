@@ -33,7 +33,7 @@ document.addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].include
 document.querySelector('.prev').onclick=()=>show(index-1);document.querySelector('.next').onclick=()=>show(index+1);
 document.querySelectorAll('.milestone').forEach(b=>b.addEventListener('mouseenter',()=>activateMilestone(b)));document.querySelectorAll('.milestone').forEach(b=>b.addEventListener('click',()=>activateMilestone(b)));
 function activateMilestone(b){document.querySelectorAll('.milestone').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelector('#path-note').textContent=b.dataset.note}
-document.querySelector('#pledge-button').onclick=()=>document.querySelector('.promise').classList.add('affirmed');
+document.querySelector('#pledge-button').onclick=()=>{const promise=document.querySelector('.promise');promise.classList.add('affirmed');document.querySelector('#pledge-button').setAttribute('aria-pressed','true')};
 document.querySelector('#journey-button').onclick=()=>document.querySelector('.finale').classList.add('begun');
 document.querySelector('#sound').onclick=toggleAmbience;
 document.addEventListener('pointerdown',e=>{if(!soundOn&&!e.target.closest('#sound')){soundOn=true;startAmbience();document.querySelector('#sound span').textContent='MUSIC ON'}},{once:true});

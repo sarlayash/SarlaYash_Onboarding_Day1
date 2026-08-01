@@ -118,7 +118,8 @@ to{opacity:1;transform:none}
 .mistakes{position:absolute;left:0;right:0;bottom:11vh;color:#a99c85;font:14px/1.7 var(--serif)}
 .mistakes b{color:#eddbad;font-weight:500}
 .promise{background:radial-gradient(circle at 75% 90%,#281900,#080604 50%,#000)}
-.promise h2{font-size:clamp(38px,5vw,78px);line-height:1}
+.promise .copy{max-width:47vw}
+.promise h2{font-size:clamp(38px,4.45vw,76px);line-height:.94}
 .promise h3{font:500 clamp(25px,3.2vw,48px) var(--serif);letter-spacing:-.04em;color:var(--gold);margin:4vh 0}
 .pledge{position:absolute;right:11vw;top:16vh;width:34vw}
 .pledge p{font-size:clamp(10px,1vw,14px);letter-spacing:.11em;margin:0;padding:1.25vh 0;border-bottom:1px solid rgba(209,168,85,.18);color:#b6a586;opacity:0;animation:reveal .5s forwards}
@@ -135,15 +136,16 @@ to{opacity:1;transform:none}
 .gold-button:hover{transform:translateY(-2px);box-shadow:0 0 32px rgba(235,187,74,.6)}
 .gold-button span{margin-left:15px;font-size:16px}
 .pledge-button{position:absolute;left:9vw;bottom:15vh}
-.pledge-confirm{position:absolute;inset:0;display:grid;place-content:center;color:#f6df9f;font:600 clamp(44px,7vw,105px) var(--serif);letter-spacing:-.06em;opacity:0;z-index:5;pointer-events:none;text-align:center}
+.pledge-confirm{position:absolute;inset:0;display:grid;place-content:center;padding:8vh 9vw;color:#f6df9f;font:600 clamp(44px,7vw,105px) var(--serif);letter-spacing:-.06em;opacity:0;z-index:6;pointer-events:none;text-align:center;background:radial-gradient(circle at 55% 55%,rgba(90,61,10,.58),rgba(4,3,2,.98) 64%)}
 .promise.affirmed:after{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgba(243,194,82,.5),transparent 55%);animation:pulse 1.8s ease forwards;z-index:4;pointer-events:none}
 @keyframes pulse{from{opacity:0;transform:scale(.2)}
 40%{opacity:1}
 to{opacity:0;transform:scale(1.6)}
 }
-.promise.affirmed .pledge-confirm{animation:confirm 2.8s .2s ease forwards}
-@keyframes confirm{15%,75%{opacity:1}
-100%{opacity:0}
+.promise.affirmed .copy,.promise.affirmed .pledge,.promise.affirmed .pledge-button{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s .45s}
+.promise.affirmed .pledge-confirm{animation:confirm 3.2s .2s ease forwards}
+@keyframes confirm{0%,100%{opacity:0;transform:scale(.96)}
+16%,78%{opacity:1;transform:scale(1)}
 }
 .finale{padding-top:7vh;background:radial-gradient(ellipse at 75% 80%,#58400d 0,#201604 27%,#050403 59%,#000)}
 .final-horizon{bottom:33vh;height:3px;box-shadow:0 0 55px 18px rgba(219,167,46,.78);transition:1.8s}
@@ -218,6 +220,7 @@ to{opacity:0;transform:scale(1.6)}
 .pledge{position:relative;right:auto;top:auto;width:100%;margin-top:5vh}
 .pledge p{padding:.7vh 0;font-size:8px}
 .pledge-button{left:7vw;bottom:7vh}
+.promise .copy{max-width:100%}
 .promise h2{font-size:34px}
 .finale-copy{max-width:100%}
 .memory-frame{padding:7vh 4vw}
