@@ -2,58 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#080705">
-  <title>SarlaYash Blessings Internships 2026 — Batch 01</title>
+  <title>SarlaYash | Batch 01 Onboarding</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="grain"></div><div class="cursor-glow"></div><canvas id="particles"></canvas>
-  <main id="deck" aria-live="polite">
-    <section class="screen moment active" data-title="The Moment">
-      <div class="door-beam"></div><div class="origin"></div>
-      <div class="moment-copy"><p class="eyebrow rise d1">01 AUGUST 2026</p><p class="eyebrow rise d2">6:00 PM IST</p><h1 class="begins rise d3">IT BEGINS.</h1><div class="brand rise d4"><span>SARLAYASH</span><strong>BLESSINGS INTERNSHIPS 2026</strong><em>BATCH 01</em></div><p class="chapter rise d5">The First Chapter.</p></div>
+  <canvas id="dust" aria-hidden="true"></canvas><div class="grain" aria-hidden="true"></div>
+  <main class="onboarding" id="onboarding">
+    <header class="topbar"><a class="brand" href="#" aria-label="SarlaYash home">SARLAYASH <span>MISSION</span></a><div class="live"><i></i><span id="live-time">Loading time…</span></div><button class="exit-mini" id="exit-mini">Exit</button></header>
+
+    <section class="step intro active" data-title="Welcome" data-step="1">
+      <div class="intro-card"><p class="eyebrow">SARLAYASH BLESSINGS INTERNSHIPS 2026</p><p class="batch">FOUNDING COHORT · BATCH 01</p><h1>YOUR <em>FIRST</em><br>DAY STARTS HERE.</h1><p class="lead">A focused beginning for people ready to learn, build, and contribute.</p><form id="name-form"><label for="name">What should we call you?</label><div class="input-row"><input id="name" name="name" autocomplete="name" placeholder="Enter your name" maxlength="48" required><button class="gold-button" type="submit">BEGIN <span>→</span></button></div><p class="input-hint" id="name-hint">Your name stays in this browser only.</p></form></div><div class="intro-mark">01</div>
     </section>
 
-    <section class="screen before" data-title="Before You">
-      <div class="copy narrow"><p class="kicker">01 / A QUIET THANK YOU</p><h2>BEFORE YOU<span>...</span></h2>
-        <div class="before-lines"><p>Before your degree.</p><p>Before your first job.</p><p>Before your first salary.</p><p>Before your first designation.</p><p>Before your first success<span>...</span></p></div>
-        <p class="believed">Someone believed in you.</p>
-      </div>
-      <div class="family-scene" aria-hidden="true"><div class="person parent left"></div><div class="arm arm-left"></div><div class="person learner"></div><div class="arm arm-right"></div><div class="person parent right"></div></div>
-      <div class="gratitude"><p>BEFORE WE WELCOME YOU,<br>WE THANK THOSE WHO BROUGHT YOU THIS FAR.</p><small>Parents &nbsp;•&nbsp; Teachers &nbsp;•&nbsp; Mentors &nbsp;•&nbsp; Families</small><div class="reflection"><span>Take 10 seconds. Think of them.</span><b id="countdown">10</b></div></div>
-    </section>
+    <section class="step" data-title="The Welcome" data-step="2"><div class="step-copy"><p class="eyebrow">01 / WELCOME</p><h2>WELCOME,<br><em data-person>FOUNDING LEARNER</em>.</h2><p class="lead">You are not joining another classroom. You are entering a place where curiosity becomes real work.</p></div><div class="side-quote">“Batch 01 is not a number.<br>It is a beginning.”</div><button class="ack gold-button" data-ack="I’m ready to begin">I'M READY TO BEGIN <span>→</span></button></section>
 
-    <section class="screen welcome" data-title="Welcome, Batch 01">
-      <div class="batch-watermark">BATCH 01</div><div class="horizon"></div>
-      <div class="copy"><p class="kicker">02 / A WARM WELCOME</p><h2>WELCOME<br><i>BATCH 01</i></h2><p class="intro">You are not joining another classroom.</p><p class="intro">You are entering a place to:</p><div class="words"><span>LEARN.</span><span>BUILD.</span><span>BREAK.</span><span>FIX.</span><span>QUESTION.</span><span>COLLABORATE.</span><span>CREATE.</span><span>GROW.</span></div><p class="expect">No one expects you to know everything.<br><b>But we expect you to be willing to learn anything.</b></p></div>
-      <div class="group" aria-hidden="true"><div></div><div></div><div></div><div></div><div></div></div>
-    </section>
+    <section class="step" data-title="Our Standard" data-step="3"><div class="step-copy"><p class="eyebrow">02 / OUR STANDARD</p><h2>SHOW UP<br><em>WITH INTENT.</em></h2><p class="lead">One focused hour can move your work, your confidence, and your future forward.</p><div class="principles"><span>Present</span><span>Prepared</span><span>Purposeful</span></div></div><button class="ack gold-button" data-ack="I will show up with intent">I ACKNOWLEDGE <span>→</span></button></section>
 
-    <section class="screen way" data-title="The SarlaYash Way">
-      <div class="copy"><p class="kicker">03 / THE METHOD</p><h2>THE SARLAYASH <i>WAY</i></h2><p class="hands">10% THEORY <span></span> 90% HANDS-ON</p></div>
-      <div class="pathway" role="list" aria-label="The SarlaYash pathway">
-        <button class="milestone active" data-note="Curiosity before credentials." role="listitem"><b>01</b><span>LEARN</span></button><button class="milestone" data-note="Knowledge becomes valuable when applied." role="listitem"><b>02</b><span>IMPLEMENT</span></button><button class="milestone" data-note="Don't only consume technology. Create with it." role="listitem"><b>03</b><span>BUILD</span></button><button class="milestone" data-note="Your work should make someone else's journey better." role="listitem"><b>04</b><span>CONTRIBUTE</span></button><button class="milestone" data-note="Become better than the person who joined yesterday." role="listitem"><b>05</b><span>GROW</span></button>
-      </div><p class="path-note" id="path-note">Curiosity before credentials.</p><p class="mistakes">You are allowed to make mistakes here.<br><b>You are NOT allowed to stop learning from them.</b></p>
-    </section>
+    <section class="step" data-title="How We Learn" data-step="4"><div class="step-copy"><p class="eyebrow">03 / HOW WE LEARN</p><h2>LEARN.<br><em>THEN BUILD.</em></h2><p class="lead">Knowledge matters when it is applied. Here, every idea should lead to a question, an experiment, or something useful.</p></div><div class="metric"><b>10%</b><span>THEORY</span><i></i><b>90%</b><span>HANDS-ON</span></div><button class="ack gold-button" data-ack="I will learn by building">I ACKNOWLEDGE <span>→</span></button></section>
 
-    <section class="screen promise" data-title="Your Promise">
-      <div class="copy"><p class="kicker">04 / A QUIET COMMITMENT</p><h2>WE DON'T WANT<br>A PROMISE FROM<br>YOUR <i>RESUME.</i></h2><h3>WE WANT ONE FROM YOU.</h3></div>
-      <div class="pledge" id="pledge"><p>I WILL SHOW UP.</p><p>I WILL GIVE MY 1 HOUR WITH INTENT.</p><p>I WILL ASK QUESTIONS.</p><p>I WILL BUILD.</p><p>I WILL HELP SOMEONE WHEN I CAN.</p><p>I WILL USE AI RESPONSIBLY.</p><p>I WILL RESPECT PEOPLE AND THEIR WORK.</p><p>I WILL NOT BE AFRAID OF FAILURE.</p><p>I WILL KEEP LEARNING.</p></div><button class="gold-button pledge-button" id="pledge-button">I'M IN.<span>→</span></button><div class="pledge-confirm" id="pledge-confirm">WELCOME TO BATCH 01.</div>
-    </section>
+    <section class="step" data-title="Curiosity" data-step="5"><div class="step-copy"><p class="eyebrow">04 / CURIOSITY</p><h2>ASK THE<br><em>BETTER QUESTION.</em></h2><p class="lead">No one expects you to know everything. We do expect you to be willing to ask, investigate, and learn anything.</p></div><div class="question-mark">?</div><button class="ack gold-button" data-ack="I will ask questions">I ACKNOWLEDGE <span>→</span></button></section>
 
-    <section class="screen finale" data-title="The First Step">
-      <div class="final-horizon"></div><div class="trail parents-trail"></div><div class="trail learner-trail"></div><div class="family-final" aria-hidden="true"><div class="mini parent-a"></div><div class="mini parent-b"></div><div class="mini learner-a"></div></div>
-      <div class="copy finale-copy"><p class="kicker">05 / THE FIRST STEP</p><p class="walk-line line-1">THEY BROUGHT YOU THIS FAR.</p><p class="walk-line line-2">FROM HERE<span>...</span></p><p class="walk-line line-3">YOU WALK.</p><div class="final-brand">SARLAYASH BLESSINGS INTERNSHIPS 2026<br><b>BATCH 01</b><br>01 AUGUST 2026</div><h2>YOUR DAY ONE<br>STARTS NOW.</h2><p class="four">Learn. &nbsp; Build. &nbsp; Contribute. &nbsp; Grow.</p><p class="mission">SARLAYASH MISSION<br><span>Legacy of Values. Future of Learning.</span></p><button class="gold-button journey-button" id="journey-button">BEGIN THE JOURNEY <span>→</span></button><p class="remember" id="remember">“Years from now, remember this moment.<br>You were Batch 01.”</p></div>
-    </section>
+    <section class="step" data-title="Ownership" data-step="6"><div class="step-copy"><p class="eyebrow">05 / OWNERSHIP</p><h2>MAKE YOUR<br><em>WORK MATTER.</em></h2><p class="lead">Take responsibility for the details. Follow through. Leave every task, teammate, and problem better than you found it.</p></div><div class="ownership-lines"><span>OWN IT</span><span>DO IT</span><span>IMPROVE IT</span></div><button class="ack gold-button" data-ack="I will take ownership">I ACKNOWLEDGE <span>→</span></button></section>
 
-    <section class="screen memory" data-title="Batch 01 Memory Wall">
-      <div class="memory-frame"><p class="kicker">A FOUNDING SOUVENIR</p><h2>BATCH 01<br><i>MEMORY WALL</i></h2><p class="memory-date">01 AUGUST 2026 &nbsp;·&nbsp; 6:00 PM IST</p><p class="memory-quote">“SarlaYash Blessings Internships 2026 began here.”</p><div class="memory-grid"><div><span>BATCH PHOTOGRAPH</span><b>To be added</b></div><div><span>FOUNDING LEARNERS</span><b>—</b></div><div><span>FIRST PROJECT</span><b>—</b></div><div><span>FIRST ACHIEVEMENT</span><b>—</b></div></div><p class="belongs">This page belongs to Batch 01 forever.</p></div>
-    </section>
+    <section class="step" data-title="Collaboration" data-step="7"><div class="step-copy"><p class="eyebrow">06 / COLLABORATION</p><h2>GROW<br><em>TOGETHER.</em></h2><p class="lead">Your work can make someone else’s journey easier. Share context, give credit, ask for help, and help when you can.</p></div><div class="orbit"><i></i><i></i><i></i><i></i></div><button class="ack gold-button" data-ack="I will contribute to the team">I ACKNOWLEDGE <span>→</span></button></section>
+
+    <section class="step" data-title="Responsible AI" data-step="8"><div class="step-copy"><p class="eyebrow">07 / RESPONSIBLE AI</p><h2>USE AI<br><em>WITH JUDGMENT.</em></h2><p class="lead">Use AI to think wider and move faster—not to avoid thinking. Verify, protect people’s work, and own what you submit.</p></div><div class="ai-rule"><span>THINK</span><b>+</b><span>VERIFY</span><b>+</b><span>CREATE</span></div><button class="ack gold-button" data-ack="I will use AI responsibly">I ACKNOWLEDGE <span>→</span></button></section>
+
+    <section class="step" data-title="Your Commitment" data-step="9"><div class="step-copy"><p class="eyebrow">08 / YOUR COMMITMENT</p><h2>KEEP<br><em>MOVING FORWARD.</em></h2><p class="lead">Mistakes are expected. Stopping is not. Progress starts again with the next small, honest step.</p></div><div class="commitment">I WILL KEEP LEARNING.</div><button class="ack gold-button" data-ack="I commit to keep learning">I'M IN <span>→</span></button></section>
+
+    <section class="step finish" data-title="Thank You" data-step="10"><div class="finish-card"><p class="eyebrow">09 / COMPLETE</p><p class="completion">ONBOARDING COMPLETE</p><h2>THANK YOU,<br><em data-person>FOUNDING LEARNER</em>.</h2><p class="lead">You have acknowledged the Batch 01 onboarding. Keep this moment as the first page of your professional story.</p><dl><div><dt>COHORT</dt><dd>Batch 01 · Founding Learner</dd></div><div><dt>COMPLETED</dt><dd id="completion-time">—</dd></div><div><dt>ACKNOWLEDGMENTS</dt><dd id="ack-total">0 / 8</dd></div></dl><div class="finish-actions"><button class="gold-button" id="download">DOWNLOAD SUMMARY <span>↓</span></button><button class="outline-button" id="exit">EXIT ONBOARDING</button></div></div></section>
   </main>
-  <nav class="hud"><button id="sound" aria-label="Toggle transition sounds">◌ <span>SOUND</span></button><div class="progress"><i></i></div><div class="screen-count"><b id="current">01</b> / 06</div><button id="fullscreen" aria-label="Fullscreen">⛶</button></nav>
-  <div class="nav-zones"><button class="prev" aria-label="Previous screen"></button><button class="next" aria-label="Next screen"></button></div>
-  <aside class="overview" id="overview"><p>OVERVIEW <span>ESC TO CLOSE</span></p><div id="overview-list"></div></aside>
-  <aside class="presenter" id="presenter"><button id="presenter-close">×</button><p class="presenter-label">PRESENTER MODE</p><div><small>CURRENT</small><b id="present-current"></b></div><div><small>NEXT</small><b id="present-next"></b></div><div><small>ELAPSED</small><b id="elapsed">00:00</b></div><div class="notes"><small>SPEAKER NOTES</small><p id="speaker-notes"></p></div></aside>
+
+  <footer class="footer"><div class="step-label"><b id="current-step">01</b> / 10 <span id="step-name">WELCOME</span></div><div class="progress"><i id="progress-fill"></i></div><div class="controls"><button id="previous" aria-label="Previous step">←</button><button id="next" aria-label="Next step">→</button></div></footer>
+  <section class="exit-screen" id="exit-screen" hidden><p class="eyebrow">SARLAYASH MISSION</p><h2>THANK YOU,<br><em data-person>FOUNDING LEARNER</em>.</h2><p>Your onboarding summary is ready whenever you need it.</p><button class="gold-button" id="return">RETURN TO SUMMARY</button></section>
   <script src="script.js"></script>
-</body></html>
+</body>
+</html>
